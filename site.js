@@ -33,6 +33,7 @@ const vue_app = Vue.createApp({
                title: 'IMDB + Tylers Top 8 Movies',
                owner: 'Tyler',
                movies: [],
+            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                github: 'https://github.com/TRobbins24/NJIT-3_StarterFiles-master'
             }
       },
@@ -44,11 +45,22 @@ const vue_app = Vue.createApp({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
             getMonthText: function(dateArray) {
-                  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-                  
+                        var year;
+                        var day;
+                        var month;
 
+// Was made by AJ
+                        year = dateArray[0];
 
-                  switch()
+                        day = dateArray[2];
+
+                        month = this.months[dateArray[1] - 1];
+
+                      
+
+                        return month + ' ' + day + ',' + year;
+
+                        
             }
 
       }
