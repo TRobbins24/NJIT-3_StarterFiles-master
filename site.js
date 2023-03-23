@@ -35,6 +35,7 @@ const vue_app = Vue.createApp({
                movies: [],
             months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                github: 'https://github.com/TRobbins24/NJIT-3_StarterFiles-master'
+
             }
       },
       created () {
@@ -45,22 +46,32 @@ const vue_app = Vue.createApp({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
             getMonthText: function(dateArray) {
-                        var year;
-                        var day;
-                        var month;
-
-// Was made by AJ
-                        year = dateArray[0];
-
-                        day = dateArray[2];
-
-                        month = this.months[dateArray[1] - 1];
-
                       
 
-                        return month + ' ' + day + ',' + year;
+      // Was made by AJ
+                     var year = dateArray[0];
+                     var day = dateArray[2];
+                     var  month = this.months[dateArray[1] - 1];
 
-                        
+                     return month + ' ' + day + ',' + year;   
+            },
+
+            posterClick: function(index) {
+                 if(this.movies[index].posterindex < this.movies[index].posters.length){
+                  this.movies[index].posterindex++;
+                 
+                  }
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length){
+                        this.movies[index].posterindex = 0;
+                  }
+
+            },
+
+            timeText: function(minutes){
+                  var hours = minutes / 60;
+                  var min = ((hours * Math.floor(hours)) * 60)
+                  min = Math.floor(min);
+                  console.log(Math.trunc(hours) + "h" + min + "m");
             }
 
       }
