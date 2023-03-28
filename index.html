@@ -45,7 +45,7 @@
 							</div>
 						<p class="title">{{movie.title}} ({{movie.country}})</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
-						<p class="runtime" @click="timeText(180)">Runtime: {{ movie.runtime }}</p>
+						<p class="runtime">Runtime: {{timeText(movie.runtime)}}</p>
 						<p class="released">Released: {{getMonthText(movie.released)}} | Rated: {{movie.rating}}</p>
 						<p class="websites">Websites: <a :href="movie.imdb" target="_blank"> imdb </a> | <a :href="movie.website" target="_blank">website</a></p>
 
