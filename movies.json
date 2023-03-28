@@ -68,5 +68,48 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "How To Train Your Dragon",
+            "iscore": 8.1,
+            "rating": "PG",
+            "runtime": "98",
+            "released": [2010, 3, 21],
+            "country": "USA",
+            "posters": ["img/HTTYD1.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0892769/?ref_=nv_sr_srsg_0",
+            "website": "https://www.dreamworks.com/how-to-train-your-dragon",
+            "likes": 999,
+            "dislikes": 0,
+            "posterindex": 0
+      },
+      {
+            "title": "How To Train Your Dragon 2",
+            "iscore": 7.8,
+            "rating": "PG",
+            "runtime": "102",
+            "released": [2014, 6, 13],
+            "country": "USA",
+            "posters": ["img/HTTYD1.jpg", "img/HTTYD2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1646971/?ref_=tt_sims_tt_t_1",
+            "website": "https://www.dreamworks.com/how-to-train-your-dragon",
+            "likes": 123,
+            "dislikes": 52,
+            "posterindex": 0
+      },
+      {
+            "title": "How to Train Your Dragon: The Hidden World",
+            "iscore": 7.4,
+            "rating": "PG",
+            "runtime": "104",
+            "released": [2019, 2, 22],
+            "country": "USA",
+            "posters": ["img/HTTYD1.jpg", "img/HTTYD2.jpg", "img/HTTYD3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt2386490/?ref_=tt_sims_tt_t_2",
+            "website": "https://www.dreamworks.com/how-to-train-your-dragon",
+            "likes": 531,
+            "dislikes": 100,
+            "posterindex": 0
       }
+
 ]
