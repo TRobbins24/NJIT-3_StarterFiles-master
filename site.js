@@ -30,7 +30,7 @@ const vue_app = Vue.createApp({
 
       data() {
             return {
-               title: 'IMDB + Tylers Top 8 Movies',
+               title: "IMDB and Tyler's Top 8 Best Movies",
                owner: 'Tyler',
                movies: [],
             months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],

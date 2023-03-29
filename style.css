@@ -5,7 +5,13 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background-image: url(img/backgroundGeo.jpg);
+}
+
+
+
+.container {
+    text-align: center;
 }
 
 /* This stylizes the header area */
@@ -14,7 +20,9 @@ body {
 }
 .header h1 {
     display: inline-block;
-    color: white;
+    color: rgb(255, 247, 247);
+    -webkit-text-stroke-width: 1.0px;
+    -webkit-text-stroke-color: rgb(17, 16, 16);
 }
 
 /* This stylizes the main page area */
@@ -31,7 +39,16 @@ body {
     margin: 20px;
     border-radius: 0;
     background-color:#dddddd;
+    cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease; 
 }
+.thumbnail:hover { 
+    transform: scale(1.2); 
+    z-index: 2;
+    }
+
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
